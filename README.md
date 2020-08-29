@@ -6,7 +6,7 @@
 - __install python3 and the following libraries:__ 
 ```
     >> pip install spotipy
-    >> pip install lyricgenius
+    >> pip install lyricsgenius
     >> pip install paralleldots
     >> pip install wordcloud
     >> pip install flask

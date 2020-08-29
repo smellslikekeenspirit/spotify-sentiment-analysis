@@ -1,0 +1,6 @@
+caches
+venv
+.idea/
+.DS_Store
+settings.cfg
+__pycache__/

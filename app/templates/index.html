@@ -1,0 +1,38 @@
+<html>
+    <style>
+		body {
+		  background: #000;
+		  color: #fff;
+		  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+		}
+		div {
+		  margin: auto 0;
+		  color: #fff;
+		  font-size: 1.2rem;
+		  cursor: pointer;
+		  padding: 10px;
+		}
+		.column {
+		  float: left;
+		  width: 32%;
+		  padding: 9px;
+		}
+		.row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+	</style>
+	<div class="row">
+		<p>Hi there, {{ user }}! </p>
+  		<div class="column">
+			<p>{{ name1 }}</p>
+			<img src={{ url1 }} alt="most frequent words" height="500" width="500">  </div>
+		<div class="column">
+			<p>{{ name2 }}</p>
+    		<img src={{ url2 }} alt="your word cloud" height="500" width="500">  </div>
+		<div class="column">
+			<p>{{ name3 }}</p>
+    		<img src={{ url3 }} alt="sentiment analysis" height="500" width="500">  </div>
+	</div>
+</html>

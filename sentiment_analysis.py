@@ -1,6 +1,6 @@
 import paralleldots
 
-PARALLELDOTS_API_KEY = 'RShBsDAdsdB8r4F7TMsZtTmRCSpjatbu1pxG0IMcjOg'
+PARALLELDOTS_API_KEY = ""
 
 paralleldots.set_api_key(PARALLELDOTS_API_KEY)
 

@@ -2,15 +2,19 @@ import json
 from flask_ngrok import run_with_ngrok
 from flask import Flask, request, redirect, g, render_template, session
 import requests
+import pandas as pd
+import matplotlib.pyplot as plot
 from urllib.parse import quote
-from index import *
+from utils import *
+from sentiment_analysis import get_emotion
+from word_cloud import create_word_cloud
 
 app = Flask(__name__)
 run_with_ngrok(app)
 
 #  Client Keys
-CLIENT_ID = "2cfcc859fc414051a5a08c69f6825674"
-CLIENT_SECRET = "07b6e8799395496b992634075a639874"
+CLIENT_ID = ""
+CLIENT_SECRET = ""
 
 # Spotify URLS
 SPOTIFY_AUTH_URL = "https://accounts.spotify.com/authorize"
